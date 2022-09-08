@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
+import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
-import NotificationButton from '../NotificationButton'
-import './styles.css'
+import NotificationButton from '../NotificationButton';
+import './styles.css';
 
 function SalesCard() {
   // declarando o dado e a função que muda a variável
-  const initialMinDate = new Date(
-    new Date().setDate(new Date().getDate() - 365),
-  )
-  const initialMaxDate = new Date()
+  const initialMinDate = new Date(new Date().setDate(new Date().getDate() - 365));
+  const initialMaxDate = new Date();
 
-  const [minDate, setMinDate] = useState(initialMinDate)
-  const [maxDate, setMaxDate] = useState(initialMaxDate)
+  const [minDate, setMinDate] = useState(initialMinDate);
+  const [maxDate, setMaxDate] = useState(initialMaxDate);
   return (
     <div className="dsmeta-card">
       <h2 className="dsmeta-sales-title">Vendas</h2>
@@ -96,4 +94,4 @@ function SalesCard() {
   )
 }
 
-export default SalesCard
+export default SalesCard;
