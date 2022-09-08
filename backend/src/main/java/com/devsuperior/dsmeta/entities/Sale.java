@@ -2,9 +2,20 @@ package com.devsuperior.dsmeta.entities;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity // prepara a classe Sales para integrar com o DB
+@Table(name="tb_sales") //nomeia a tabela relacionada
 public class Sale {
 
+	@Id //identifica a chave primária
+	@GeneratedValue(strategy=GenerationType.IDENTITY)//informa que este campo será auto incrementado
 	private Long id;
+	
 	private String sellerName;
 	private Integer visited;
 	private Integer  deals;
