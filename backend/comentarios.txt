@@ -1,0 +1,10 @@
+para startar o servidor de backend:
+No spring tools suit, em Boot Dashboard, selecionar dsmeta e cilcar start ou restart
+
+para acessar o servidor de backend:
+localhost:8080
+
+para acessar o terminal de apoio do banco de dados H2
+localhost:8080/h2-console
+no campo de URL utilizar jdbc:h2:mem:testdb definido em src/main/resources/application.properties 
+
