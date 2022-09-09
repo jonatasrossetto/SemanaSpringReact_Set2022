@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=jh_T5_o3qKE
 
 as variáveis de configuração do Twillio estão no Spring Tools em
 dsmeta[boot] -> Run As -> Run Configurations -> Environment
+
+no heroku vc deve configurar as variáveis de ambiente na aba settings da app
