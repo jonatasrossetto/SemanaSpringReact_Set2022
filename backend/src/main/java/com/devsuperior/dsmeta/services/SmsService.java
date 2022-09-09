@@ -33,8 +33,8 @@ public class SmsService {
 		Sale sale = saleRepository.findById(saleId).get();
 		String date = sale.getDate().getMonthValue()+"/"+sale.getDate().getYear();
 		
-		//String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date + " com uma venda total de R$" + String.format("%.2f", sale.getAmount());
-		String msg = "Teste de envio de sms com o Heroku";
+		String msg = "O vendedor " + sale.getSellerName() + " foi destaque em " + date + " com uma venda total de R$" + String.format("%.2f", sale.getAmount());
+		//String msg = "Teste de envio de sms com o Heroku";
 
 		Twilio.init(twilioSid, twilioKey);
 
