@@ -8,3 +8,8 @@ para acessar o terminal de apoio do banco de dados H2
 localhost:8080/h2-console
 no campo de URL utilizar jdbc:h2:mem:testdb definido em src/main/resources/application.properties 
 
+repository - componente responsável por acessar o banco de dados
+https://www.youtube.com/watch?v=jh_T5_o3qKE
+
+as variáveis de configuração do Twillio estão no Spring Tools em
+dsmeta[boot] -> Run As -> Run Configurations -> Environment
