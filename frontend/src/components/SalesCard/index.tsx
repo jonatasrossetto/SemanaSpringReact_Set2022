@@ -19,13 +19,19 @@ function SalesCard() {
   const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
+    const dmin = minDate.toISOString().slice(0, 10);
+    const dmax = maxDate.toISOString().slice(0, 10);
+    console.log(dmin);
+    console.log(dmax);
     console.log('TESTE DO USEEFFECT')
-    axios.get(`${BASE_URL}/sales`).then(response => {
+    axios.get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`).then(response => {
       //console.log(response.data);
       setSales(response.data.content);
 
     })
-  }, [])
+  }, [minDate, maxDate])
+
+  // a lista de dependência [minDate,maxDate] indica para o react que toda vez que estas variáveis forem modificadas ele deverá executar a função do callback
 
   return (
     <div className="dsmeta-card">
