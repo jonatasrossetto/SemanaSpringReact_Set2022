@@ -1,3 +1,5 @@
+
+
 para startar o servidor de backend:
 No spring tools suit, em Boot Dashboard, selecionar dsmeta e cilcar start ou restart
 
@@ -15,3 +17,8 @@ as variáveis de configuração do Twillio estão no Spring Tools em
 dsmeta[boot] -> Run As -> Run Configurations -> Environment
 
 no heroku vc deve configurar as variáveis de ambiente na aba settings da app
+
+a extensão de componente react é .tsx
+
+perguntas: Porque fazer a integração com o BD usando java/spring quando tb é possível fazer esta mesma integração utilizando o próprio nodejs que é utilizado no servidor de frontend? 
+
